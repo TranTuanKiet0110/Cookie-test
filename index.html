@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookies test</title>
     <link rel="stylesheet" href="cookies_content.css">
-    <script src=""></script>
 </head>
 <body>
     <div class="container">
@@ -43,6 +42,8 @@
                 alert("Cookie can't be set!");
             }
         }
-    </script>
+        let checkCookie = document.cookie.indexOf("CookieBy=InstaKilogram");
+        checkCookie != 1 ? cookieConsent.classList.add("hide"): cookieConsent.classList.remove("hide");
+    </script> 
 </body>
 </html>
