@@ -29,21 +29,5 @@
             <a href="#">Learn more</a>
         </div>
     </div>
-
-    <script>
-        const cookieConsent = document.querySelector(".wrapper"),
-        acceptBtn = cookieConsent.querySelector(".button button");
-
-        acceptBtn.onclick = ()=>{
-            document.cookie = "CookieBy=InstaKilogram; max-age=" + 60*60*24*30;
-            if(document.cookie){
-                cookieConsent.classList.add("hide");
-            }else{
-                alert("Cookie can't be set!");
-            }
-        }
-        let checkCookie = document.cookie.indexOf("CookieBy=InstaKilogram");
-        checkCookie != 1 ? cookieConsent.classList.add("hide"): cookieConsent.classList.remove("hide");
-    </script> 
 </body>
 </html>
